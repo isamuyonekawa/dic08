@@ -1,0 +1,7 @@
+<h2>詳細</h2>
+<p>タイトル: <%= @blog.title %></p>
+
+<p>内容: <%= @blog.content %></p>
+
+<%= link_to '編集', edit_blog_path(@blog.id) %>
+<%= link_to '削除', blog_path(@blog.id), method: :delete %>
